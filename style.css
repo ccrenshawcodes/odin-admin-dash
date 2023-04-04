@@ -19,12 +19,35 @@
 
     display: flex;
     flex-direction: column;
-
 }
 
 .nav > * {
-    padding: 10px;
+    padding: 15px;
     background-color: inherit;
+}
+
+.nav > .nav-pages {
+    display: flex;
+    flex-direction: column;
+
+    height: 10em;
+    background-color: inherit;
+}
+
+.nav-pages > .link {
+    flex: 1;
+    background-color: inherit;
+}
+
+.nav-settings {
+    display: flex;
+    flex-direction: column;
+    height: 6em;
+}
+
+.nav-settings > .settings {
+    background-color: inherit;
+    flex: 1;
 }
 
 .banner {
