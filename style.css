@@ -141,7 +141,7 @@
 .greeting > h4 {
     background-color: inherit;
     font-size: larger;
-    font-weight: bolder;
+    font-weight: bold;
 
 }
 
@@ -152,6 +152,24 @@
 
     padding: 10px;
     background-color: inherit;
+}
+
+.profile > svg {
+    height: 2em;
+    padding: 20px;
+    background-color: inherit;
+}
+
+.profile img {
+    height: 2.5em;
+    background-color: inherit;
+}
+
+.profile > h4 {
+    font-weight: bolder;
+    padding: 10px;
+    background-color: inherit;
+    font-size: larger;
 }
 
 .banner > .btns {
@@ -187,7 +205,7 @@
 }
 
 .article > h3 {
-    font-weight: bolder;
+    font-weight: bold;
 
 }
 
@@ -214,7 +232,7 @@
 
 .item > h4 {
     flex: 1;
-    font-weight: bolder;
+    font-weight: bold;
 
 }
 
@@ -259,7 +277,7 @@
 
 .sidebar > h3 {
     margin: 2em 0px 10px 0px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .item2 {
@@ -284,5 +302,5 @@
 }
 
 .ann > h4 {
-    font-weight: bolder;
+    font-weight: bold;
 }
