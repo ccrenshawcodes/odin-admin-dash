@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300..600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     background-color: rgb(230, 232, 232);
     font-family: 'Anuphan', sans-serif;
+    font-weight: lighter;
 }
 
 .content {
@@ -12,6 +13,8 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
+
+/* nav bar */
 
 .nav {
     grid-column: 1 / 2;
@@ -32,6 +35,11 @@
 .logo {
     display: flex;
     align-items: center;
+}
+
+.logo > h4 {
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .nav > .nav-pages {
@@ -72,6 +80,12 @@
     padding: 0.5em;
 }
 
+.link > h4, .settings > h4 {
+    font-size: 20px;
+}
+
+/* top banner */
+
 .banner {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
@@ -83,13 +97,28 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
-.banner > input {
-    height: 2em;
+.search-bar {
+    background-color: inherit;
+    padding: 10px;
+
     align-self: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-bar > svg {
+    height: 2.5em;
+    background-color: inherit;
+}
+
+.search-bar > input {
+    height: 2em;
     margin: 10px;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 5px 10px;
+    width: 75%;
 }
 
 .banner > .greeting {
@@ -98,6 +127,22 @@
     background-color: inherit;
     padding: 10px;
     align-self: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.greeting > img {
+    height: 3.5em;
+    background-color: inherit;
+    padding: 10px;
+}
+
+.greeting > h4 {
+    background-color: inherit;
+    font-size: larger;
+    font-weight: bolder;
+
 }
 
 .banner > .profile {
@@ -122,7 +167,10 @@
     background-color: rgb(46, 165, 217);
     color: white;
     border: none;
+    font-size: 15px;
 }
+
+/* main content */
 
 .article {
     grid-column: 2 / -1;
@@ -136,6 +184,11 @@
 
 .article > * {
     margin: 10px;
+}
+
+.article > h3 {
+    font-weight: bolder;
+
 }
 
 .article > .items {
@@ -153,11 +206,35 @@
     background-color: white;
     box-sizing: border-box;
     border-left: 5px solid rgb(247, 180, 10);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item > h4 {
+    flex: 1;
+    font-weight: bolder;
+
+}
+
+.item > p {
+    flex: 2;
 }
 
 .item > * {
     padding: 10px;
     background-color: inherit;
+}
+
+.icons {
+    align-self: flex-end;
+}
+
+.icons > img {
+    height: 1.5em;
+    background-color: inherit;
+    padding: 5px;
 }
 
 .sidebar {
@@ -176,6 +253,8 @@
 
 .item2 > h3 {
     margin: 10px 0px;
+    font-weight: bolder;
+
 }
 
 .item2 > .ann {
